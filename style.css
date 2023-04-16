@@ -1,0 +1,88 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --orange: #F2C14E;
+    --winning-blocks: #2d414b;
+}
+body{
+    background-color: rgb(117, 117, 117);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: orange;
+}
+.info h1
+{
+font-size: 2rem;
+color: antiquewhite;
+text-align: center;
+}
+
+.turn{
+    
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.heading{
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+}
+.heading +button {
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    height: 2rem;
+    width: 5.5rem;
+    font-weight: 900;
+    color:rgb(134, 255, 205);
+    font-family: system-ui, -apple-system;
+    background-color:rgb(22, 75, 131);
+    cursor: pointer;
+}
+.heading +button:hover{
+    background-color: antiquewhite;
+    transition: 0.4s;
+    scale: 1.1;
+    color: rgb(50, 48, 91);
+}
+
+.game{
+    border-top: 2px solid white;
+    height: 31.2rem;
+    background-color: rgb(11, 86, 139);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.game h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+}
+.outer_box{
+    margin: 10rem;
+    height:27rem;
+    width: 27rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    height: 8.93rem;
+    width: 8.93rem;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    text-align: center;
+    font-size: 5rem;
+    transition: 0.3s;
+    font-family: 'Skranji', cursive;
+    cursor: pointer;
+}
+.box:nth-child(3n){
+    border-right: none;
+}
+.box:nth-child(6) ~.box{
+    border-bottom: none;
+}
